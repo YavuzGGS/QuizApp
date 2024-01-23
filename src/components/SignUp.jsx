@@ -29,7 +29,7 @@ const SignUp = () => {
 
         console.log('user registered', displayName);
   
-        window.location.href = '#/quiz';
+        window.location.href = '/#/quiz';
   
         })
 
@@ -61,7 +61,7 @@ const SignUp = () => {
         </div>
       </form>
       <p>If you have an account already
-      <a className="button button3"href="#/signin">Sign In</a> </p>
+      <a className="button button3"href="/#/signin">Sign In</a> </p>
       <Footer />
     </div> 
   );
