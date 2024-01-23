@@ -33,14 +33,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/" element={<MainPage />} />
-        <Route path='/quiz' element={<Quiz />} />
-        <Route path='/logout' element={<LogOut />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/weather' element={<MapApplication />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="#/signup" element={<SignUp />} />
+        <Route path="#/signin" element={<SignIn />} />
+        <Route path="#/" element={<MainPage />} />
+        <Route path='#/quiz' element={<Quiz />} />
+        <Route path='#/logout' element={<LogOut />} />
+        <Route path='#/about' element={<About />} />
+        <Route path='#/weather' element={<MapApplication />} />
+        <Route path='#/contact' element={<Contact />} />
       </Routes>
     </Router>
   );
