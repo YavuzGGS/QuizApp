@@ -1,0 +1,129 @@
+@import "./vars.scss";
+
+body {
+  font-family: monospace;
+  
+  color:black;
+  //color: #dbcd79;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100vh;
+}
+
+.styled {
+  text-align: center;
+  line-height: 32px;
+
+  font-size: medium;
+
+  width: 100%;
+ 
+  margin: 0 auto;
+}
+
+.forms {
+  border-style:double;
+  font-size: medium;
+
+}
+
+.formDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  font-size: medium;
+  padding-top: 0%;
+ 
+}
+
+.quiz-container {
+  margin: auto;
+  margin-top: 45px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button1 {
+  background-color: #333; 
+  color: white; 
+  border: 2px;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: #333; 
+  color: white; 
+  border: 2px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  font-size: small;
+}
+
+.footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  color: white;
+  padding: 10px;
+}
+#root {
+  min-height: 100%;
+  position: relative;
+}
+
+.authDetail {
+  float: right;
+}
+
+/* Base styles for all screens */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens between 601px and 1200px */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens larger than 1200px */
+@media only screen and (min-width: 1201px) {
+  body {
+    font-size: 18px;
+  }
+}
