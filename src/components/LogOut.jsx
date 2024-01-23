@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
-import Footer from './Footer';
 
 const Logout = () => {
   const navigate = useNavigate();
@@ -27,7 +26,6 @@ const Logout = () => {
       <h1>Logging Out...</h1>
       {/* You can add a loading spinner or any other UI element here */}
 
-      <Footer />
     </div>
   );
 };
