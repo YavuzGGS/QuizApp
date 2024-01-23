@@ -17,9 +17,8 @@ function App() {
 export default App;*/
 
 // App.jsx
-// App.jsx
 import React from 'react';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import MainPage from './components/MainPage';
 import SignUp from './components/SignUp';
@@ -32,7 +31,7 @@ import MapApplication from './components/Weather';
 
 function App() {
   return (
-    <BrowserRouter basename='/ReactApp/'>
+    <Router>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
@@ -43,12 +42,8 @@ function App() {
         <Route path='/weather' element={<MapApplication />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
 export default App;
-
-
-
-

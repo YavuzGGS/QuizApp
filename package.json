@@ -1,5 +1,6 @@
 {
   "name": "quizapp",
+  "homepage": "/QuizApp/#",
   "private": true,
   "version": "0.0.0",
   "type": "module",
