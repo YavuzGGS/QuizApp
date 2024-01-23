@@ -9,7 +9,7 @@ const Logout = () => {
       try {
         await signOut(auth);
         alert('Logout successful!');
-        // Redirect to the login page or any other desired page
+        // Redirect to the login page or any other desired page :/
         window.location.href = '/#/signin';
       } catch (error) {
         console.error('Error during logout:', error);
