@@ -18,6 +18,8 @@ export default App;*/
 
 // App.jsx
 import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import MainPage from './components/MainPage';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
@@ -27,16 +29,9 @@ import Contact from './components/Contact';
 import About from './components/About';
 import MapApplication from './components/Weather';
 
-
-
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-const App = () => {
-  
+function App() {
   return (
-    <Router>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/QuizApp/'}>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
@@ -46,14 +41,12 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/weather' element={<MapApplication />} />
         <Route path='/contact' element={<Contact />} />
-      
-
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
-};
-export default App;
+}
 
+export default App;
 
 
 
