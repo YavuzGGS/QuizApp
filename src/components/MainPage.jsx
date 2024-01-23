@@ -22,16 +22,16 @@ const MainPage = () => {
 
         {user ? (
           // If a user is logged in, show a different UI (e.g., a logout button)
-          <Link to="/QuizApp/#/logout" className="button button1">
+          <Link to="/logout" className="button button1">
             Logout
           </Link>
         ) : (
           // If no user is logged in, show the sign-in and sign-up buttons
           <>
-            <Link to="/QuizApp/#/signin" className="button button1">
+            <Link to="/signin" className="button button1">
               Sign In
             </Link>
-            <Link to="/QuizApp/#/signup" className="button button2">
+            <Link to="/signup" className="button button2">
               Sign Up
             </Link>
           </>
