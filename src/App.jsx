@@ -24,7 +24,7 @@ import MainPage from './components/MainPage';
 import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import Quiz from './Quiz';
-import LogOut from './components/Logout';
+import LogOut from './components/LogOut';
 import Contact from './components/Contact';
 import About from './components/About';
 import MapApplication from './components/Weather';
