@@ -32,7 +32,7 @@ import MapApplication from './components/Weather';
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/ReactApp/'}>
+    <BrowserRouter basename='/ReactApp/'>
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
