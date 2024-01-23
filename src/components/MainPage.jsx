@@ -19,8 +19,8 @@ const MainPage = () => {
       <img src="./src/quizTime-2.png" alt="Logo"/>
         </p>
 
-      <a className="button button1"href="/signin">Sign In</a> 
-      <a className="button button2" href="/signup">Sign Up</a>
+      <a className="button button1"href="/QuizApp/#/signin">Sign In</a> 
+      <a className="button button2" href="/QuizApp/#/signup">Sign Up</a>
 
       </div>
 

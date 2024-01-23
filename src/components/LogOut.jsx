@@ -1,23 +1,26 @@
 import React, { useEffect } from 'react';
 import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
-import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Logout = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const handleLogout = async () => {
       try {
         await signOut(auth);
         alert('Logout successful!');
-        // Redirect to the login page or any other desired page
-        window.location.href = '/QuizApp/#/signin';
+        
+        // Redirect to the login page using the navigate function
+        navigate('/signin');
       } catch (error) {
         console.error('Error during logout:', error);
       }
     };
 
     handleLogout();
-  }, []);
+  }, [navigate]);
 
   return (
     <div>
