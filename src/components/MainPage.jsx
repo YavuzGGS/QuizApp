@@ -5,7 +5,7 @@ import '../App.css'
 import "../index.scss";
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
-
+import quizzersLogo from '../quizzersLogo-2.png';
 
 
 const MainPage = () => {
@@ -16,7 +16,7 @@ const MainPage = () => {
       <div className="button-container">
    
       <p>
-      <img src="../quizzersLogo-2.png" alt="Logo"/>
+      <img src={quizzersLogo} alt="Logo" />
         </p>
 
       <a className="button button1"href="/QuizApp/#/signin">Sign In</a> 
