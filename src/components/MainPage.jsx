@@ -6,9 +6,10 @@ import "../index.scss";
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
 import quizzersLogo from '../quizzersLogo-2.png';
-
+import { auth } from '../firebase';
 
 const MainPage = () => {
+  const user = auth.currentUser;
   return (
     <div className="styled">
 <div className="nav"> <Navbar /></div>
@@ -19,8 +20,22 @@ const MainPage = () => {
       <img src={quizzersLogo} alt="Logo" />
         </p>
 
-      <a className="button button1"href="/QuizApp/#/signin">Sign In</a> 
-      <a className="button button2" href="/QuizApp/#/signup">Sign Up</a>
+        {user ? (
+          // If a user is logged in, show a different UI (e.g., a logout button)
+          <Link to="/QuizApp/#/logout" className="button button1">
+            Logout
+          </Link>
+        ) : (
+          // If no user is logged in, show the sign-in and sign-up buttons
+          <>
+            <Link to="/QuizApp/#/signin" className="button button1">
+              Sign In
+            </Link>
+            <Link to="/QuizApp/#/signup" className="button button2">
+              Sign Up
+            </Link>
+          </>
+        )}
 
       </div>
 
