@@ -13,7 +13,7 @@ const Logout = () => {
         alert('Logout successful!');
         
         // Redirect to the login page using the navigate function
-        navigate('/signin');
+        navigate('./signin');
       } catch (error) {
         console.error('Error during logout:', error);
       }
