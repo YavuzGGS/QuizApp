@@ -21,7 +21,7 @@ const SignIn = () => {
            alert('Login successful! Welcome');
          
            
-           window.location.href = '/#/quiz';
+           window.location.href = '/QuizApp/#/quiz';
         }).catch((error) => {
             console.log(error);
         })
@@ -47,7 +47,7 @@ const SignIn = () => {
                 <button type="submit">Log In</button>
                 </div>
             </form>
-            <p>If you don't have an account <a className="button button3"href="/#/signup">Sign Up</a> </p>
+            <p>If you don't have an account <a className="button button3"href="/QuizApp/#/signup">Sign Up</a> </p>
             
             <Footer />
         </div>
