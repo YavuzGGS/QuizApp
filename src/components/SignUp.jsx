@@ -21,7 +21,7 @@ const SignUp = () => {
         uid: user.uid,
         email: user.email,
         displayName: displayName,
-        userAllTimScore: userAppTimScore,
+        userAllTimScore: userAllTimeScore,
 
       })
 
