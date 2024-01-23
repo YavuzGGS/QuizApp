@@ -16,7 +16,7 @@ const MainPage = () => {
       <div className="button-container">
    
       <p>
-      <img src="src/quizzersLogo-2.png" alt="Logo"/>
+      <img src="../quizzersLogo-2.png" alt="Logo"/>
         </p>
 
       <a className="button button1"href="/QuizApp/#/signin">Sign In</a> 
