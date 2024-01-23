@@ -36,11 +36,13 @@ const Navbar = () => {
             <Link to="/signin">Sign In</Link>
           )}
         </li>
-        <li className='authDetail'>
+        <ul className='authDetail'>
+           <li>
           <AuthDetails />
-        </li>
-      </ul>
-      <hr></hr>
+        </li></ul>
+        </ul>
+
+  
     </nav>
   );
 };

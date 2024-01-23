@@ -5,6 +5,7 @@ import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import "../index.scss";
 
 
 const WeatherMarker = ({ position }) => {
@@ -60,10 +61,11 @@ const MapApplication = () => {
     };
 
     return (
-        <div>
+        <div className='styled'>
             <div className="nav"> <Navbar /></div>
-        <div>
-            <MapContainer center={[40.97, 28.874323]} zoom={13} style={{ height: '70vh', width: '70vw' }}>
+            <p>Chose the location where you want to learn weather</p>
+        <div className='weather'>
+            <MapContainer center={[40.97, 28.874323]} zoom={13} style={{ height: '60vh', width: '70vw' }}>
 
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

@@ -28,13 +28,11 @@ const About = () => {
           </header>
     <div className='aboutUs'>
     <p>
-          Welcome to our quiz application! This application is designed to test your knowledge on various topics. QuizGenius is designed to test your knowledge on various topics. Our mission is to being the best app on this area
+    Welcome to our quiz application! Quizzers is designed to test your knowledge on various topics. Our mission is to being the best app on this area.</p>
+  
+      <p> We started with a passion for solving questions in 2024, and our commitment to learning has been the driving force behind everything we do. Our team is occured by 3 person. We are a good team and we are in communicate all time.
         </p>
-        <p>
-        Founded in 2024. We started with a passion for solving questions, and our commitment to learning has been the driving force behind everything we do. Our team is occured by 3 person. We are a good team and we are in communicate all time
-        </p>
-        
-            <p>We love hearing from our community! If you have any questions, suggestions, or just want to say hello, feel free to reach out to us at <a href="mailto:sahiny@email.com">sahiny@email.com</a> or send your comment on the <a href='/contact'>contact </a>page</p>
+            <p>We love hearing from our community! If you have any questions, suggestions, or just want to say hello, feel free to reach out to us at <a href="mailto:quizzers@email.com">quizzers@email.com</a> or send your comment on the <a href='/QuizApp/#/contact'>contact </a>page</p>
 
           </div>
          <Footer />
@@ -45,7 +43,3 @@ const About = () => {
     };
     
     export default About;
-
-
-
-

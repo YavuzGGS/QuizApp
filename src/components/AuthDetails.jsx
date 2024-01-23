@@ -19,7 +19,7 @@ const AuthDetails = () =>{
     const userSignOut = () => {
         signOut(auth).then(() =>{
             console.log('sign out successfull');
-            window.location.href = '/signin';
+            window.location.href = '/QuizApp/#/signin';
         }).catch(error => console.log(error))
     }
     return (

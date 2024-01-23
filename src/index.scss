@@ -7,7 +7,7 @@ $foreground: #2d264b;
 
 body {
   font-family: monospace;
-  background: linear-gradient(0deg, $primary 0.03%, $accent);
+  background: rgb(219, 140, 140);
   color: $foreground;
   display: flex;
   justify-content: center;
@@ -23,6 +23,7 @@ body {
   margin-top: 100px;
   padding: 30px 60px;
   box-sizing: border-box;
+  color:black;
 
   .active-question-no {
     font-size: 32px;
@@ -45,6 +46,8 @@ body {
   ul {
     margin-top: 20px;
     margin-left: -40px;
+    align-items: center;
+
 
     li {
       text-decoration: none;
@@ -56,23 +59,21 @@ body {
       border-radius: 16px;
       padding: 11px;
       margin-top: 15px;
+      margin-left: 5%;
       cursor: pointer;
     }
 
     .selected-answer {
-      background: $primary;
+      background: rgb(188, 101, 101);
       border: 1px solid $accent;
       color: $bg;
     }
   }
 
-  .footer {
-    display: flex;
-    justify-content: flex-end;
-  }
+
 
   button {
-    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    background: rgb(188, 101, 101);
     border-radius: 9px;
     font-size: 18px;
     color: $bg;

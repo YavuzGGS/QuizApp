@@ -11,11 +11,10 @@ import { auth } from '../firebase';
 const Footer = () => {
   return (
     <nav className="footer">
-  <hr></hr>
       <footer>
             <p>Thank you for being a part of the Quizzers journey!</p>
             <address>
-              QuizGenius
+              Quizzers
               Huzur Mah. Maslak
               +90 534 747 29 53
             </address>

@@ -5,7 +5,6 @@ import '../App.css'
 import "../index.scss";
 import Navbar from './Navbar.jsx';
 import Footer from './Footer.jsx';
-import quizTimeImage from '../quizTime-2.png';
 
 
 
@@ -13,11 +12,11 @@ const MainPage = () => {
   return (
     <div className="styled">
 <div className="nav"> <Navbar /></div>
-      <h1>Welcome to QuizGenius</h1>
+      <h1>Welcome to Quizzers</h1>
       <div className="button-container">
    
       <p>
-      <img src={quizTimeImage} alt="Logo" />
+      <img src="src/quizzersLogo-2.png" alt="Logo"/>
         </p>
 
       <a className="button button1"href="/QuizApp/#/signin">Sign In</a> 
