@@ -10,7 +10,7 @@ const Logout = () => {
         await signOut(auth);
         alert('Logout successful!');
         // Redirect to the login page or any other desired page 
-        window.location.href = '/QuizApp/#/signin';
+        window.location.href = `${process.env.PUBLIC_URL}/#/signin`;
       } catch (error) {
         console.error('Error during logout:', error);
       }
